@@ -71,7 +71,7 @@ timedomain = dde.geometry.TimeDomain(0, 1.0)
 geomtime = dde.geometry.GeometryXTime(geom, timedomain)
 
 # Initial and boundary conditions
-# 
+
 ic = dde.icbc.IC(geomtime, lambda x: func(x[:, 0:1]), lambda _, on_initial: on_initial)
 
 # Define the PDE problem and configurations of the network:
